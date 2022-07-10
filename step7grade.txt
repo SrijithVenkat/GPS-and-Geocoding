@@ -1,0 +1,46 @@
+
+Step 7 Grading	
+
+Name:   Srijith Venkateshwaran
+
+When you have completed the step assignment, complete the following form and compute your assignment grade. Include this file as a text in the folder with your project when you turn it in. Enter the number of points you deserve for each grading category. You may enter partial points if you feel you have partially completed the category.
+
+Total available points:  100
+For each item, if there is a request for the file and line number, indicate that as well so the TA can verify the code.
+
+
+5	5 	Submitted correctly (naming, grading sheet, etc.)
+
+
+15	15 	Tutorial complete
+
+
+15	15 	Layout
+
+
+15	15 	setUI() function
+
+
+10	10 	Computing distance between two coordinates
+
+
+10	10 	Saving new address to preferences
+
+
+5	5 	Adding your home coordinates to the program
+
+
+5	5 	Getting the call to newLocation() to work
+
+
+10	10 	Ability to change mode of navigation
+
+
+10	10 	Google Maps properly invoked and route to destination properly displayed on map for selected transportation mode
+
+
+100	Total (please add the points and include the total here)
+
+The grade you compute is the starting point for course staff, who reserve the right to change the grade if they disagree with your assessment and to deduct points for other issues they may encounter, such as errors in the submission process, naming issues, etc.
+
+#My android device stopped working, so I could only test it on the emulator. I tried my best with what I had. I think it should work fine however, the logic seems correct. 

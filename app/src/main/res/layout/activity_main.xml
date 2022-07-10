@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="false"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textProvider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="false"
+        android:layout_centerHorizontal="true"
+        android:text="@string/dummy"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textLabelProvider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/textLabelLongitude"
+        android:layout_centerHorizontal="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="10dp"
+        android:layout_toStartOf="@id/textLongitude"
+        android:text="@string/provider"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textLatitude"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textProvider"
+        android:layout_alignStart="@id/textProvider"
+        android:layout_alignParentEnd="false"
+        android:layout_centerHorizontal="false"
+        android:text="@string/dummy"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textLabelLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textLabelProvider"
+        android:layout_alignEnd="@id/textLabelLongitude"
+        android:layout_alignParentEnd="false"
+        android:layout_centerHorizontal="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="10dp"
+        android:layout_toStartOf="@id/textLongitude"
+        android:text="@string/latitude"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textLongitude"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textLatitude"
+        android:layout_alignStart="@id/textLatitude"
+        android:layout_centerHorizontal="false"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/dummy"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textLabelLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textLabelLatitude"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_toStartOf="@id/textLongitude"
+        android:text="@string/longitude"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textLongitude"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:text="@string/dummy"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textTo"
+        android:layout_centerHorizontal="true"
+        android:text="@string/dummy"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textNewLocLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textDistance"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/newloc"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/editLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textDistance"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:minHeight="48dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/editLocation"
+        android:layout_alignEnd="@id/editLocation"
+        android:layout_marginTop="-2dp"
+        android:layout_marginEnd="0dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:onClick="onNew"
+        android:text="@string/newButton"
+        android:textColor="#000000"
+        android:textSize="11sp" />
+
+    <RadioButton
+        android:id="@+id/drivingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button"
+        android:layout_centerHorizontal="true"
+        android:onClick="onDriving"
+        android:text="@string/driving" />
+
+    <RadioButton
+        android:id="@+id/walkingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/drivingButton"
+        android:layout_centerHorizontal="true"
+        android:onClick="onWalking"
+        android:text="@string/walking" />
+
+    <RadioButton
+        android:id="@+id/bicyclingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/walkingButton"
+        android:layout_centerHorizontal="true"
+        android:onClick="onCycling"
+        android:text="@string/bicycle" />
+
+    <Button
+        android:id="@+id/display_route"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bicyclingButton"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/darker_gray"
+        android:onClick="redirectMap"
+        android:text="@string/route"
+        android:textColor="#000000" />
+</RelativeLayout>
